@@ -1,0 +1,21 @@
+<template>
+    <lightning-card  title="Calculator">
+        
+            <div >
+                <lightning-input type="Number" label="Enter first Number" value={firstNumber} onchange={takefirstinput}></lightning-input>
+            </div>
+      
+            <div>
+                <lightning-input type="Number" label="Enter Second Number" value={secondNumber} onchange={takesecondinput}></lightning-input>
+            </div>
+           
+            <div class="slds-grid slds-grid_align-center slds-p-around_medium">
+               <lightning-button label="Add" slot="actions" onclick={add}></lightning-button>
+               <lightning-button label="Subtract" slot="actions" onclick={subtract}> </lightning-button>
+               <lightning-button label="Multiply" slot="actions" onclick={multiply}> </lightning-button>
+               <lightning-button label="Divide" slot="actions" onclick={divide}></lightning-button>
+
+           </div>        
+        <p slot="footer">Result:{result}</p>
+    </lightning-card>
+</template>
